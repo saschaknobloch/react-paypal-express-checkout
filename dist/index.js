@@ -162,6 +162,7 @@
                         env: this.props.env,
                         client: this.props.client,
                         style: this.props.style,
+                        locale: this.props.locale,
                         payment: payment,
                         commit: true,
                         onAuthorize: onAuthorize,
@@ -186,7 +187,8 @@
         currency: _propTypes2.default.string.isRequired,
         total: _propTypes2.default.number.isRequired,
         client: _propTypes2.default.object.isRequired,
-        style: _propTypes2.default.object
+        style: _propTypes2.default.object,
+        locale: _propTypes2.default.string
     };
 
     PaypalButton.defaultProps = {
